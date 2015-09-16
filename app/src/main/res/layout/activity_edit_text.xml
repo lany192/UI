@@ -1,0 +1,51 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_round_white_bg"
+            android:hint="白底圆角背景"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_round_white_bg"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="2dp"
+            android:hint="白底黑边圆角背景，带图"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_round_red_bg"
+            android:drawablePadding="2dp"
+            android:hint="白底红边圆角背景"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_white_bg"
+            android:hint="白底直角背景"
+            android:singleLine="true" />
+    </LinearLayout>
+
+</ScrollView>

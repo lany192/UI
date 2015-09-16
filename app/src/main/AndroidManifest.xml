@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".btn.ButtonActivity"
+            android:label="@string/title_activity_button" >
+        </activity>
+        <activity
+            android:name=".edittext.EditTextActivity"
+            android:label="@string/title_activity_edit_text" >
+        </activity>
+        <activity
+            android:name=".textview.TextViewActivity"
+            android:label="@string/title_activity_text_view" >
+        </activity>
     </application>
 
 </manifest>

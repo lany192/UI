@@ -1,0 +1,63 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/blue_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_blue_style"
+            android:text="蓝色按钮"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/red_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_red_style"
+            android:text="红色按钮"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/white_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_white_style"
+            android:text="白色按钮" />
+
+        <Button
+            android:id="@+id/yellow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_yellow_style"
+            android:text="黄色按钮" />
+
+        <Button
+            android:id="@+id/red_half_round_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_red_half_round_style"
+            android:text="对半圆角按钮"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/white_dotted_line_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_white_dotted_line_style"
+            android:text="虚线边界圆角按钮" />
+    </LinearLayout>
+
+</ScrollView>
