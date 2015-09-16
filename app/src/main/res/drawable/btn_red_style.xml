@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 被按下去 -->
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+            <gradient android:angle="90.0" android:centerColor="#ff7d0101" android:endColor="#ff7d0101" android:startColor="#ff7d0101" />
+
+            <padding android:bottom="5dip" android:left="5dip" android:right="5dip" android:top="5dip" />
+
+            <corners android:radius="5dip" />
+        </shape></item>
+    <!-- 当前焦点 -->
+    <item android:state_focused="true"><shape android:shape="rectangle">
+            <gradient android:angle="90.0" android:centerColor="#ff31adf0" android:endColor="#ff31adf0" android:startColor="#ff31adf0" />
+
+            <padding android:bottom="5dip" android:left="5dip" android:right="5dip" android:top="5dip" />
+
+            <corners android:radius="5dip" />
+        </shape></item>
+    <!-- 其他情況 -->
+    <item><shape android:shape="rectangle">
+            <gradient android:angle="90.0" android:centerColor="#fff00303" android:endColor="#ffff0000" android:startColor="#ffdf0202" />
+
+            <padding android:bottom="5dip" android:left="5dip" android:right="5dip" android:top="5dip" />
+
+            <corners android:radius="5dip" />
+        </shape></item>
+
+</selector>

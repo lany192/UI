@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 被按下去 -->
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+            <gradient android:angle="90.0" android:centerColor="#ffbab9b9" android:endColor="#ffbab9b9" android:startColor="#ffbab9b9" />
+
+            <padding android:bottom="5dip" android:left="5dip" android:right="5dip" android:top="5dip" />
+
+            <corners android:radius="5dip" />
+        </shape></item>
+    <!-- 其他情況,有需要的情况可以定制 -->
+    <item><shape android:shape="rectangle">
+            <gradient android:angle="90.0" android:centerColor="#ffeaeaea" android:endColor="#ffffffff" android:startColor="#ffd9d9d9" />
+
+            <stroke android:width="1px" android:color="#90000000" />
+
+            <padding android:bottom="5dip" android:left="5dip" android:right="5dip" android:top="5dip" />
+
+            <corners android:radius="5dip" />
+        </shape></item>
+
+</selector>
