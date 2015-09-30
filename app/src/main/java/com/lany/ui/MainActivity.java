@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import com.lany.ui.btn.ButtonActivity;
 import com.lany.ui.edittext.EditTextActivity;
+import com.lany.ui.image.ImageViewActivity;
 import com.lany.ui.textview.TextViewActivity;
 
 import butterknife.Bind;
@@ -43,6 +44,12 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.main_edittext_btn)
     void gotoEditText() {
         startActivity(new Intent(this, EditTextActivity.class));
+    }
+
+
+    @OnClick(R.id.main_imageview_btn)
+    void gotoImageView() {
+        startActivity(new Intent(this, ImageViewActivity.class));
     }
 
 }

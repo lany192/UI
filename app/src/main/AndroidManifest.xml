@@ -28,6 +28,10 @@
             android:name=".textview.TextViewActivity"
             android:label="@string/title_activity_text_view" >
         </activity>
+        <activity
+            android:name=".image.ImageViewActivity"
+            android:label="@string/title_activity_image_view" >
+        </activity>
     </application>
 
 </manifest>
