@@ -7,13 +7,14 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.lany.ui.BaseActivity;
 import com.lany.ui.R;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ButtonActivity extends AppCompatActivity {
+public class ButtonActivity extends BaseActivity {
     @Bind(R.id.blue_btn)
     Button blueBtn;
     @Bind(R.id.red_btn)
@@ -28,10 +29,13 @@ public class ButtonActivity extends AppCompatActivity {
     Button whiteDottedLineBtn;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_button);
-        ButterKnife.bind(this);
+    protected int getLayoutId() {
+        return R.layout.activity_button;
+    }
+
+    @Override
+    protected void init(Bundle savedInstanceState) {
+
     }
 
     @OnClick(R.id.circle_btn)

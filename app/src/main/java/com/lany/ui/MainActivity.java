@@ -14,9 +14,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MainActivity extends AppCompatActivity {
-
-
+public class MainActivity extends BaseActivity {
     @Bind(R.id.main_button_btn)
     Button buttonBtn;
     @Bind(R.id.main_text_btn)
@@ -25,10 +23,18 @@ public class MainActivity extends AppCompatActivity {
     Button edittextBtn;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
+    protected boolean hasBackBtn() {
+        return false;
+    }
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    protected void init(Bundle savedInstanceState) {
+
     }
 
     @OnClick(R.id.main_button_btn)

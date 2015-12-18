@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="primary">#FF35a8df</color>
+    <color name="primary_dark">@color/primary</color>
+    <color name="primary_light">@color/primary</color>
+    <color name="primary_text">@android:color/black</color>
+    <color name="secondary_text">#ffdddddd</color>
+    <color name="icons">#212121</color>
+    <color name="accent">#999999</color>
+    <color name="divider">#B6B6B6</color>
+
+
     <color name="holo_blue_bright">#ff00ddff</color>
     <color name="holo_green_light">#ff99cc00</color>
     <color name="holo_orange_light">#ffffbb33</color>
