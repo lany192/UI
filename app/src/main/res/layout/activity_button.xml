@@ -14,7 +14,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@drawable/btn_blue_style"
-            android:text="蓝色按钮"
+            android:text="蓝色按钮blue"
             android:textColor="@android:color/white" />
 
         <Button
@@ -58,6 +58,31 @@
             android:layout_margin="10dp"
             android:background="@drawable/btn_white_dotted_line_style"
             android:text="虚线边界圆角按钮" />
+
+        <LinearLayout
+            android:id="@+id/circle_btn"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_circle_style"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="签到"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="签到有奖哦"
+                android:textColor="#fffa60"
+                android:textSize="12sp" />
+        </LinearLayout>
     </LinearLayout>
 
 </ScrollView>

@@ -5,14 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.lany.ui.R;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class ButtonActivity extends AppCompatActivity {
-
     @Bind(R.id.blue_btn)
     Button blueBtn;
     @Bind(R.id.red_btn)
@@ -33,25 +34,9 @@ public class ButtonActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_button, menu);
-        return true;
+    @OnClick(R.id.circle_btn)
+    void circleBtnClick(){
+        Toast.makeText(this,"点击签到",Toast.LENGTH_SHORT).show();
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }
